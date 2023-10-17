@@ -24,8 +24,7 @@ import {loader as singleProduct  } from './pages/SingleProduct'
 
 import { useDispatch, useSelector } from 'react-redux'
 import { updateCart } from './redux/fetures/productsSlice'
-import Checkout from './pages/Checkout'
-import Orders from './pages/Orders'
+
 
 
 
@@ -70,14 +69,7 @@ const App = () => {
           element:<Cart/>,
           errorElement:<ErrorElement/>
         },
-        {
-          path: 'checkout',
-          element: <Checkout />,
-        },
-        {
-          path: 'orders',
-          element: <Orders />,
-        },
+  
       ]
     },
     {
